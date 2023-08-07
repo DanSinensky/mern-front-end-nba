@@ -10,9 +10,7 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/teams" element={<Teams />} />
-        <Route path="/teams/east" element={<Teams />} />
-        <Route path="/teams/west" element={<Teams />} />
+        <Route path="/" element={<Teams />} />
         <Route path="/add-team" element={<TeamCreate />} />
         <Route path="/teams/:id/edit" element={<TeamEdit />} />
       </Routes>
