@@ -26,9 +26,15 @@ nav * {
 
 .accordion-item {
   background-color: #efefef;
-  width: 50%;
+  width: 500px;
 }
 
-.accordion {
-  margin: 0 auto;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: #efefef;
 }

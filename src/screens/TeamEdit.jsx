@@ -23,7 +23,7 @@ export default function TeamEdit() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await updateTeam(id, team)
-    navigate(`/teams`)
+    navigate(`/`)
   }
   const handleChange = (e) => {
     const { name, value } = e.target

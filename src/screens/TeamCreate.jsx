@@ -15,7 +15,7 @@ export default function TeamCreate() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await createTeam(team)
-    navigate("/teams")
+    navigate("/")
   }
   const handleChange = (e) => {
     const { name, value } = e.target
