@@ -26,7 +26,7 @@ export default function TeamCreate() {
   }
   return (
     <div>
-      <h1>Add a new NBA Team to the Database</h1>
+      <h3>Add a new NBA Team to the Database</h3>
       <form className='create-form' onSubmit={handleSubmit}>
         <input
           type="text"

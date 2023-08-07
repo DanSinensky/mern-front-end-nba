@@ -34,7 +34,7 @@ export default function TeamEdit() {
   }
   return (
     <div>
-      <h1>Edit this NBA Team</h1>
+      <h3>Edit this NBA Team</h3>
       <form className='create-form' onSubmit={handleSubmit}>
         <input
           type="text"

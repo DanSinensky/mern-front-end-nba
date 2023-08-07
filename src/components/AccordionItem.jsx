@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { getTeam, deleteTeam } from '../services/teams.js'
 
 
@@ -7,7 +7,6 @@ export default function AccordionItem(team) {
   const [isActive, setIsActive] = useState(false)
   const [team1, setTeam1] = useState({})
   const [isDeleted, setDeleted] = useState(false)
-  let navigate = useNavigate()
   useEffect(() => {
     fetchTeam()
   }, [])
@@ -29,12 +28,14 @@ export default function AccordionItem(team) {
           <div>{isActive ? '-' : '+'}</div>
         </div>
         {isActive && <div className="accordion-content">
-          <h2>{team.full_name}</h2>
+          <h4>{team.full_name}</h4>
           <p>{team.conference} - {team.division} - {team.city}</p>
-          <Link to={`/teams/${team._id}/edit`}>
-            <button>Edit Team</button>
-          </Link>
-          <button onClick={handleDelete}>Delete Team</button>
+          <div className='buttons'>
+            <Link to={`/teams/${team._id}/edit`}>
+              <button>Edit Team</button>
+            </Link>
+            <button onClick={handleDelete}>Delete Team</button>
+          </div>
         </div>}
       </div>
     )

@@ -25,12 +25,16 @@ export default function Accordion({ teams }) {
   }
   return (
     <section className='info'>
-      <button onClick={fetchTeams}>All Teams</button>
-      <button onClick={fetchTeamsEast}>East Teams</button>
-      <button onClick={fetchTeamsWest}>West Teams</button>
-      {teams1.map((team) => (
-        <AccordionItem key={team._id} {...team} />
-      ))}
+      <div className='buttons large'>
+        <button onClick={fetchTeams}>All Teams</button>
+        <button onClick={fetchTeamsEast}>East Teams</button>
+        <button onClick={fetchTeamsWest}>West Teams</button>
+      </div>
+      <div className='accordion'>
+        {teams1.map((team) => (
+          <AccordionItem key={team._id} {...team} />
+        ))}
+      </div>
     </section>
   );
 };
