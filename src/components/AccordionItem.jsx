@@ -24,12 +24,12 @@ export default function AccordionItem(team) {
     return (
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
-          <div>{team.abbreviation}</div>
+          <div>{team1.abbreviation}</div>
           <div>{isActive ? '-' : '+'}</div>
         </div>
         {isActive && <div className="accordion-content">
-          <h4>{team.full_name}</h4>
-          <p>{team.conference} - {team.division} - {team.city}</p>
+          <h4>{team1.full_name}</h4>
+          <p>{team1.conference} - {team1.division} - {team1.city}</p>
           <div className='buttons'>
             <Link to={`/teams/${team._id}/edit`}>
               <button>Edit Team</button>
