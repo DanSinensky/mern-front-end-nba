@@ -25,6 +25,9 @@ export default function Accordion({ teams }) {
   }
   return (
     <section className='info'>
+      <button onClick={fetchTeams}>All Teams</button>
+      <button onClick={fetchTeamsEast}>East Teams</button>
+      <button onClick={fetchTeamsWest}>West Teams</button>
       {teams1.map((team) => (
         <AccordionItem key={team._id} {...team} />
       ))}
