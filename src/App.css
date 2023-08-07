@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-image: url("89-893125_nba-logo-transparent-png-transparent-nba-logo-large.png"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -55,4 +54,12 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form, .accordion {
+  background-image: url("89-893125_nba-logo-transparent-png-transparent-nba-logo-large.png"); 
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

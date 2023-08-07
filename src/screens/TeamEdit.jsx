@@ -33,7 +33,7 @@ export default function TeamEdit() {
     }))
   }
   return (
-    <div>
+    <div className='form'>
       <h3>Edit this NBA Team</h3>
       <form className='create-form' onSubmit={handleSubmit}>
         <input
@@ -84,7 +84,7 @@ export default function TeamEdit() {
           value={team.name}
           onChange={handleChange}
         />
-        <button type="submit">Create The Team!</button>
+        <button type="submit">Edit The Team!</button>
       </form>
     </div>
   )
